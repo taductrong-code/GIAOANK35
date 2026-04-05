@@ -1,0 +1,348 @@
+\documentclass[12pt, a4paper]{article}
+
+% ----- GÓI NGÔN NGỮ VÀ FONT TIẾNG VIỆT -----
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese]{babel}
+
+% ----- CÁC GÓI TOÁN HỌC -----
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+% ----- CÁC GÓI BỐ CỤC VÀ KHÁC -----
+\usepackage[margin=1in]{geometry} % Căn lề
+\usepackage{graphicx}             % Chèn hình ảnh
+\usepackage{array}                % Cải tiến môi trường tabular
+\usepackage{parskip}              % Thụt lề đoạn = 0, thêm khoảng cách giữa các đoạn
+\usepackage{fancyhdr}             % Tùy chỉnh đầu trang/chân trang
+
+%
+
+% ----- CÀI ĐẶT ĐÁNH SỐ TRANG -----
+\pagestyle{fancy}
+\fancyhf{} % Xóa hết header/footer
+\fancyfoot[C]{\thepage} % Đặt số trang ở giữa footer
+\renewcommand{\headrulewidth}{0pt} % Bỏ đường kẻ ở header
+
+% ----- THÔNG TIN TÀI LIỆU -----
+%\title{BẢO TOÀN MOMEN ĐỘNG LƯỢNG CỦA CHẤT ĐIỂM}
+\author{}
+\date{} % Không hiển thị ngày
+
+\begin{document}
+	
+	% --- NỘI DUNG VĂN BẢN ---
+	% \noindent được sử dụng để xóa thụt đầu dòng của đoạn văn
+	\noindent 
+	% \textbf dùng để in đậm số thứ tự của bài
+	\section*{Bài 1}
+
+Một quả cầu nhỏ trượt không ma sát theo bề mặt bên trong của một phễu hình nón thẳng đứng. 
+Tại thời điểm ban đầu, quả cầu ở độ cao $h_0$ và vận tốc nằm ngang $v_0$. 
+Tìm $v_0$, nếu biết rằng, khi tiếp tục chuyển động, quả cầu lên đến độ cao $h$, sau đó bắt đầu hạ xuống. 
+Tìm vận tốc $v$ của quả cầu tại điểm cao nhất.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.3\linewidth]{"../../../itrithuc/OneDrive - Trong/OneDrive/0 AI LATEX/THU VIEN ANH/screenshot008"}
+	\caption{}
+	\label{fig:screenshot008}
+\end{figure}
+\section*{Bài 2}
+
+Một bán cầu rỗng bán kính $R$, mặt trong nhẵn, được giữ cố định trên mặt đất sao cho mặt hở hướng lên trên. Một vật nhỏ ở điểm cao nhất của mặt trong bán cầu và được truyền một vận tốc $v_0$ theo phương tiếp tuyến với miệng bán cầu (hình 1). Cho gia tốc trọng trường là $g$.
+
+\begin{enumerate}
+	\item[a.] Tìm độ cao nhỏ nhất của quỹ đạo chuyển động của vật so với mặt đất.
+	\item[b.] Tìm vận tốc lớn nhất của vật nhỏ trong quá trình chuyển động.
+\end{enumerate}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.3\linewidth]{"../../../itrithuc/OneDrive - Trong/OneDrive/0 AI LATEX/THU VIEN ANH/screenshot002"}
+	\caption{}
+	\label{fig:screenshot002}
+\end{figure}
+
+\subsection*{Đáp số}
+
+a/ $h_{\text{min}} = R(1-\cos\theta) = R - \frac{v_0^2}{4g} \left( \sqrt{\frac{16g^2R^2}{v_0^4} + 1} - 1 \right)$
+
+\vspace{0.5cm} % Thêm một chút khoảng cách
+
+b/ $v = \sqrt{\frac{v_0^2 + \sqrt{16g^2R^2 + v_0^4}}{2}}$
+\section*{Bài 3.} Trên một mặt phẳng ngang nhẵn có một vật nhỏ khối lượng $m$
+	chuyển động ; vật này được buộc vào đầu một sợi dây không dãn ;
+	đầu kia của dây được kéo qua lỗ O (hình vẽ) với vận tốc
+	kéo không đổi. Xác định sức căng của dây theo khoảng cách $r$
+	giữa vật và lỗ O, nếu với $r = r_0$, vận tốc góc của dây bằng $\omega_0$.
+	% TODO: \usepackage{graphicx} required
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\linewidth]{"../../../itrithuc/OneDrive - Trong/OneDrive/0 AI LATEX/THU VIEN ANH/screenshot006"}
+		\caption{}
+		\label{fig:screenshot006}
+	\end{figure}
+	
+
+	\section*{Bài 4}
+	
+	Một vật khối lượng $m$ được cột chặt vào đầu của 1 sợi dây. 
+	Vật dịch chuyển không ma sát trên bàn, và dây được xuyên qua 1 lỗ nhỏ trên bàn (bỏ qua ma sát) như hình vẽ, dưới đó có 1 con chó kéo dây làm cho dây luôn bị căng.
+	
+	Ban đầu vật chuyển động theo quỹ đạo tròn, với động năng $W_d$. 
+	Dây được kéo từ từ, cho đến khi bán kính của vòng giảm đi một nửa. 
+	Tìm công mà con chó đã thực hiện.
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\linewidth]{"../../../itrithuc/OneDrive - Trong/OneDrive/0 AI LATEX/THU VIEN ANH/screenshot007"}
+		\caption{}
+		\label{fig:screenshot007}
+	\end{figure}
+\subsection*{Bài 5}
+	
+	Một vật nhỏ có khối lượng $m$ được buộc vào đầu một sợi chỉ, đầu kia của sợi chỉ được luồn qua một lỗ nhỏ $O$ trên mặt bàn nhẵn nằm ngang, kéo căng sợi chỉ và giữ chặt đầu sợi chỉ. Khoảng cách từ $O$ tới vật là $r_0$. Truyền cho vật vận tốc vuông góc với sợi chỉ, vật chuyển động tròn đều trên mặt bàn với vận tốc $v_0$. Tại $t_0 = 0$, kéo nhẹ đều sợi chỉ qua lỗ. Sau thời gian $\tau$ sợi chỉ quay được góc $2\pi$ quanh $O$.
+	
+	% Để chèn hình ảnh, em cần có file ảnh (ví dụ: Bai9.png) 
+	% trong cùng thư mục và bỏ dấu % ở dòng \usepackage{graphicx}
+	% và các dòng bên dưới:
+	
+	% \begin{figure}[h!]
+		%     \centering
+		%     % \includegraphics[width=0.4\textwidth]{Bai9.png} 
+		%     % Thay Bai9.png bằng tên file hình của em
+		%     \caption{Hình minh họa Bài 9}
+		%     \label{fig:bai9}
+		% \end{figure}
+	
+	\begin{enumerate}
+		\item Tìm diện tích quét được của sợi chỉ trong thời gian $\tau$.
+		\item Tìm biểu thức lực căng của sợi chỉ theo khoảng cách $r$ từ $O$ tới vật.
+		\item Tìm tỉ số giữa động năng của vật và tốc độ góc $\omega$ của sợi chỉ.
+	\end{enumerate}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.5\linewidth]{"../../../itrithuc/OneDrive - Trong/OneDrive/0 AI LATEX/THU VIEN ANH/screenshot009"}
+	\caption{}
+	\label{fig:screenshot009}
+\end{figure}
+
+		% Giải thích các ký hiệu LaTeX:
+	% $m$ : Biến số m (khối lượng) trong chế độ toán học
+	% $r$ : Biến số r (khoảng cách)
+	% $r = r_0$ : Phương trình với chỉ số dưới (subscript)
+	% $\omega_0$ : Ký hiệu omega (\omega) với chỉ số dưới (_0)
+	\vspace{1cm} % Tạo một khoảng trống
+	
+	% --- PHẦN BÀI GIẢI ---
+\newpage
+	\section*{Hướng dẫn giải chi tiết bài 3}
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.7\linewidth]{"C:/Users/admin/itrithuc/OneDrive - Trong/OneDrive/0 AI LATEX/THU VIEN ANH/screenshot001"}
+		\caption{}
+		\label{fig:screenshot001}
+	\end{figure}
+	
+	\subsection*{Phân tích bài toán}
+	Chúng ta có các thông tin sau:
+	\begin{enumerate}
+		\item \textbf{Hệ vật:} Gồm một vật nhỏ khối lượng $m$.
+		\item \textbf{Môi trường:} Chuyển động trên mặt phẳng ngang, \textbf{nhẵn} (không có ma sát).
+		\item \textbf{Lực tác dụng (theo phương ngang):} Chỉ có lực căng dây $T$ hướng vào tâm O.
+		\item \textbf{Điều kiện:}
+		\begin{itemize}
+			\item Dây được kéo qua lỗ O với \textbf{vận tốc không đổi}. Điều này có nghĩa là vận tốc theo phương bán kính $v_r = \dot{r}$ là một hằng số. Vì dây được "kéo" (thu ngắn lại) nên $v_r$ là một giá trị âm không đổi.
+			\item Từ $v_r = \dot{r} = \text{hằng số}$, ta suy ra gia tốc theo phương bán kính $\ddot{r} = 0$.
+			\item Điều kiện ban đầu: Tại $r = r_0$, vận tốc góc là $\omega = \omega_0$.
+		\end{itemize}
+		\item \textbf{Yêu cầu:} Tìm sức căng $T$ của dây theo $r$.
+	\end{enumerate}
+	
+	\subsection*{Hướng dẫn giải}
+	Chúng ta sẽ sử dụng hai nguyên lý cơ bản:
+	\begin{enumerate}
+		\item Định luật II Newton cho chuyển động theo phương bán kính.
+		\item Định luật Bảo toàn Mô-men Động lượng.
+	\end{enumerate}
+	
+	\subsubsection*{Bước 1: Áp dụng Định luật Bảo toàn Mô-men Động lượng}
+	Vì mặt phẳng nhẵn và lực căng $T$ luôn hướng về tâm O, mô-men lực tác dụng lên vật $m$ đối với tâm O bằng không:
+	$$ \vec{\tau} = \vec{r} \times \vec{T} = 0 $$
+	Do đó, mô-men động lượng $L$ của vật đối với tâm O được bảo toàn:
+	$$ L =  (m r^2) \omega = \text{hằng số} $$
+	Sử dụng điều kiện ban đầu ($r = r_0, \omega = \omega_0$) để tìm hằng số này:
+	$$ L = m r_0^2 \omega_0 $$
+	Vì $L$ bảo toàn tại mọi vị trí $r$, ta có:
+	$$ m r^2 \omega = m r_0^2 \omega_0 $$
+	Từ đây, ta tìm được biểu thức của vận tốc góc $\omega$ theo bán kính $r$:
+	$$ \omega = \omega_0 \left( \frac{r_0}{r} \right)^2 = \frac{\omega_0 r_0^2}{r^2} $$
+	
+	\subsubsection*{Bước 2: Áp dụng Định luật II Newton (Phương bán kính)}
+	Định luật II Newton cho chuyển động của vật trong hệ tọa độ cực (theo phương bán kính) là:
+	$$ \sum F_r = m a_r = m (\ddot{r} - r\omega^2) $$
+	\begin{itemize}
+		\item Lực tác dụng duy nhất theo phương bán kính là lực căng dây $T$, hướng vào tâm (ngược chiều dương của $r$). Do đó, $\sum F_r = -T$.
+		\item Vì dây được kéo với \textbf{vận tốc không đổi} nên gia tốc theo phương bán kính $\ddot{r} = 0$.
+	\end{itemize}
+	Thay các giá trị này vào phương trình:
+	$$ -T = m (0 - r\omega^2) $$
+	$$ T = m r \omega^2 $$
+	Phương trình này cho thấy lực căng $T$ chính là lực hướng tâm.
+	
+	\subsubsection*{Bước 3: Kết hợp kết quả}
+	Bây giờ, chúng ta thay biểu thức của $\omega$ (tìm được ở Bước 1) vào biểu thức của $T$ (tìm được ở Bước 2):
+	$$ T = m r \left( \frac{\omega_0 r_0^2}{r^2} \right)^2 $$
+	$$ T = m r \left( \frac{\omega_0^2 r_0^4}{r^4} \right) $$
+	Rút gọn $r$, ta được kết quả cuối cùng:
+	$$ T = m \omega_0^2 \frac{r_0^4}{r^3} $$
+	
+	\subsection*{Kết luận}
+	Vậy, sức căng của dây theo khoảng cách $r$ được xác định bởi biểu thức:
+	% \boxed{} được dùng để đóng khung công thức cuối cùng
+	% Giải thích các ký hiệu LaTeX:
+% $m$ : Biến số m (khối lượng) trong chế độ toán học
+% $r$ : Biến số r (khoảng cách)
+% $r = r_0$ : Phương trình với chỉ số dưới (subscript)
+% $\omega_0$ : Ký hiệu omega (\omega) với chỉ số dưới (_0)
+\vspace{1cm} % Tạo một khoảng trống
+
+% --- PHẦN BÀI GIẢI ---
+\section*{Hướng dẫn giải chi tiết bài 3}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"C:/Users/admin/itrithuc/OneDrive - Trong/OneDrive/0 AI LATEX/THU VIEN ANH/screenshot001"}
+	\caption{}
+	\label{fig:screenshot001}
+\end{figure}
+
+\subsection*{Phân tích bài toán}
+Chúng ta có các thông tin sau:
+\begin{enumerate}
+	\item \textbf{Hệ vật:} Gồm một vật nhỏ khối lượng $m$.
+	\item \textbf{Môi trường:} Chuyển động trên mặt phẳng ngang, \textbf{nhẵn} (không có ma sát).
+	\item \textbf{Lực tác dụng (theo phương ngang):} Chỉ có lực căng dây $T$ hướng vào tâm O.
+	\item \textbf{Điều kiện:}
+	\begin{itemize}
+		\item Dây được kéo qua lỗ O với \textbf{vận tốc không đổi}. Điều này có nghĩa là vận tốc theo phương bán kính $v_r = \dot{r}$ là một hằng số. Vì dây được "kéo" (thu ngắn lại) nên $v_r$ là một giá trị âm không đổi.
+		\item Từ $v_r = \dot{r} = \text{hằng số}$, ta suy ra gia tốc theo phương bán kính $\ddot{r} = 0$.
+		\item Điều kiện ban đầu: Tại $r = r_0$, vận tốc góc là $\omega = \omega_0$.
+	\end{itemize}
+	\item \textbf{Yêu cầu:} Tìm sức căng $T$ của dây theo $r$.
+\end{enumerate}
+
+\subsection*{Hướng dẫn giải}
+Chúng ta sẽ sử dụng hai nguyên lý cơ bản:
+\begin{enumerate}
+	\item Định luật II Newton cho chuyển động theo phương bán kính.
+	\item Định luật Bảo toàn Mô-men Động lượng.
+\end{enumerate}
+
+\subsubsection*{Bước 1: Áp dụng Định luật Bảo toàn Mô-men Động lượng}
+Vì mặt phẳng nhẵn và lực căng $T$ luôn hướng về tâm O, mô-men lực tác dụng lên vật $m$ đối với tâm O bằng không:
+$$ \vec{\tau} = \vec{r} \times \vec{T} = 0 $$
+Do đó, mô-men động lượng $L$ của vật đối với tâm O được bảo toàn:
+$$ L = I \omega = (m r^2) \omega = \text{hằng số} $$
+Sử dụng điều kiện ban đầu ($r = r_0, \omega = \omega_0$) để tìm hằng số này:
+$$ L = m r_0^2 \omega_0 $$
+Vì $L$ bảo toàn tại mọi vị trí $r$, ta có:
+$$ m r^2 \omega = m r_0^2 \omega_0 $$
+Từ đây, ta tìm được biểu thức của vận tốc góc $\omega$ theo bán kính $r$:
+$$ \omega = \omega_0 \left( \frac{r_0}{r} \right)^2 = \frac{\omega_0 r_0^2}{r^2} $$
+
+\subsubsection*{Bước 2: Áp dụng Định luật II Newton (Phương bán kính)}
+Định luật II Newton cho chuyển động của vật trong hệ tọa độ cực (theo phương bán kính) là:
+$$ \sum F_r = m a_r = m (\ddot{r} - r\omega^2) $$
+\begin{itemize}
+	\item Lực tác dụng duy nhất theo phương bán kính là lực căng dây $T$, hướng vào tâm (ngược chiều dương của $r$). Do đó, $\sum F_r = -T$.
+	\item Vì dây được kéo với \textbf{vận tốc không đổi} nên gia tốc theo phương bán kính $\ddot{r} = 0$.
+\end{itemize}
+Thay các giá trị này vào phương trình:
+$$ -T = m (0 - r\omega^2) $$
+$$ T = m r \omega^2 $$
+Phương trình này cho thấy lực căng $T$ chính là lực hướng tâm.
+
+\subsubsection*{Bước 3: Kết hợp kết quả}
+Bây giờ, chúng ta thay biểu thức của $\omega$ (tìm được ở Bước 1) vào biểu thức của $T$ (tìm được ở Bước 2):
+$$ T = m r \left( \frac{\omega_0 r_0^2}{r^2} \right)^2 $$
+$$ T = m r \left( \frac{\omega_0^2 r_0^4}{r^4} \right) $$
+Rút gọn $r$, ta được kết quả cuối cùng:
+$$ T = m \omega_0^2 \frac{r_0^4}{r^3} $$
+
+\subsection*{Kết luận}
+Vậy, sức căng của dây theo khoảng cách $r$ được xác định bởi biểu thức:
+% \boxed{} được dùng để đóng khung công thức cuối cùng
+	% Giải thích các ký hiệu LaTeX:
+% $m$ : Biến số m (khối lượng) trong chế độ toán học
+% $r$ : Biến số r (khoảng cách)
+% $r = r_0$ : Phương trình với chỉ số dưới (subscript)
+% $\omega_0$ : Ký hiệu omega (\omega) với chỉ số dưới (_0)
+\vspace{1cm} % Tạo một khoảng trống
+
+% --- PHẦN BÀI GIẢI ---
+\section*{Hướng dẫn giải chi tiết bài 3}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"C:/Users/admin/itrithuc/OneDrive - Trong/OneDrive/0 AI LATEX/THU VIEN ANH/screenshot001"}
+	\caption{}
+	\label{fig:screenshot001}
+\end{figure}
+
+\subsection*{Phân tích bài toán}
+Chúng ta có các thông tin sau:
+\begin{enumerate}
+	\item \textbf{Hệ vật:} Gồm một vật nhỏ khối lượng $m$.
+	\item \textbf{Môi trường:} Chuyển động trên mặt phẳng ngang, \textbf{nhẵn} (không có ma sát).
+	\item \textbf{Lực tác dụng (theo phương ngang):} Chỉ có lực căng dây $T$ hướng vào tâm O.
+	\item \textbf{Điều kiện:}
+	\begin{itemize}
+		\item Dây được kéo qua lỗ O với \textbf{vận tốc không đổi}. Điều này có nghĩa là vận tốc theo phương bán kính $v_r = \dot{r}$ là một hằng số. Vì dây được "kéo" (thu ngắn lại) nên $v_r$ là một giá trị âm không đổi.
+		\item Từ $v_r = \dot{r} = \text{hằng số}$, ta suy ra gia tốc theo phương bán kính $\ddot{r} = 0$.
+		\item Điều kiện ban đầu: Tại $r = r_0$, vận tốc góc là $\omega = \omega_0$.
+	\end{itemize}
+	\item \textbf{Yêu cầu:} Tìm sức căng $T$ của dây theo $r$.
+\end{enumerate}
+
+\subsection*{Hướng dẫn giải}
+Chúng ta sẽ sử dụng hai nguyên lý cơ bản:
+\begin{enumerate}
+	\item Định luật II Newton cho chuyển động theo phương bán kính.
+	\item Định luật Bảo toàn Mô-men Động lượng.
+\end{enumerate}
+
+\subsubsection*{Bước 1: Áp dụng Định luật Bảo toàn Mô-men Động lượng}
+Vì mặt phẳng nhẵn và lực căng $T$ luôn hướng về tâm O, mô-men lực tác dụng lên vật $m$ đối với tâm O bằng không:
+$$ \vec{\tau} = \vec{r} \times \vec{T} = 0 $$
+Do đó, mô-men động lượng $L$ của vật đối với tâm O được bảo toàn:
+$$ L = I \omega = (m r^2) \omega = \text{hằng số} $$
+Sử dụng điều kiện ban đầu ($r = r_0, \omega = \omega_0$) để tìm hằng số này:
+$$ L = m r_0^2 \omega_0 $$
+Vì $L$ bảo toàn tại mọi vị trí $r$, ta có:
+$$ m r^2 \omega = m r_0^2 \omega_0 $$
+Từ đây, ta tìm được biểu thức của vận tốc góc $\omega$ theo bán kính $r$:
+$$ \omega = \omega_0 \left( \frac{r_0}{r} \right)^2 = \frac{\omega_0 r_0^2}{r^2} $$
+
+\subsubsection*{Bước 2: Áp dụng Định luật II Newton (Phương bán kính)}
+Định luật II Newton cho chuyển động của vật trong hệ tọa độ cực (theo phương bán kính) là:
+$$ \sum F_r = m a_r = m (\ddot{r} - r\omega^2) $$
+\begin{itemize}
+	\item Lực tác dụng duy nhất theo phương bán kính là lực căng dây $T$, hướng vào tâm (ngược chiều dương của $r$). Do đó, $\sum F_r = -T$.
+	\item Vì dây được kéo với \textbf{vận tốc không đổi} nên gia tốc theo phương bán kính $\ddot{r} = 0$.
+\end{itemize}
+Thay các giá trị này vào phương trình:
+$$ -T = m (0 - r\omega^2) $$
+$$ T = m r \omega^2 $$
+Phương trình này cho thấy lực căng $T$ chính là lực hướng tâm.
+
+\subsubsection*{Bước 3: Kết hợp kết quả}
+Bây giờ, chúng ta thay biểu thức của $\omega$ (tìm được ở Bước 1) vào biểu thức của $T$ (tìm được ở Bước 2):
+$$ T = m r \left( \frac{\omega_0 r_0^2}{r^2} \right)^2 $$
+$$ T = m r \left( \frac{\omega_0^2 r_0^4}{r^4} \right) $$
+Rút gọn $r$, ta được kết quả cuối cùng:
+$$ T = m \omega_0^2 \frac{r_0^4}{r^3} $$
+
+\subsection*{Kết luận}
+Vậy, sức căng của dây theo khoảng cách $r$ được xác định bởi biểu thức:
+% \boxed{} được dùng để đóng khung công thức cuối cùng
+$$ \mathbf{T = m \omega_0^2 \frac{r_0^4}{r^3}} $$
+\end{document}
