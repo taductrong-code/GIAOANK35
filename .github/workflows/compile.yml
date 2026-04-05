@@ -1,0 +1,20 @@
+name: Tu dong in PDF
+on: [push] # Robot chạy mỗi khi bạn lưu file mới lên
+
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lay code tu kho
+        uses: actions/checkout@v4
+
+      - name: Bien dich LaTeX sang PDF
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: GiaoAnVatLy.tex # THAY BẰNG TÊN FILE CỦA BẠN
+
+      - name: Luu file PDF lai
+        uses: actions/upload-artifact@v4
+        with:
+          name: Giao-An-PDF-Xuat-Ban
+          path: GiaoAnVatLy.pdf # Tên file PDF sau khi in xong
